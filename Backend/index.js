@@ -26,7 +26,6 @@ app.post("/signup",async(req,res)=>{
  app.post("/login",async(req,res)=>{
    const {email,password}=req.body
    const result= await userModal.find({email})
-   console.log(result);
    const pass=result.map((el)=>{
         return el.password
    })

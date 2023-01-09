@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 require("dotenv").config()
+mongoose.set('strictQuery', false)
 const connection = mongoose.connect(
   process.env.Mongo_URL
 );
-mongoose.set('strictQuery', false)
+
 const userSchema=mongoose.Schema({
     "name":{type:String,require:true},
     "email":{type:String,require:true},
