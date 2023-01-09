@@ -1,0 +1,45 @@
+.user{
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    margin-top:30px;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 20px;
+}
+.user>input{
+    height: 40px;
+}
+.user>select{
+    height: 40px;
+}
+.user>p{
+    color: red;
+    margin-left: -60%;
+    margin-top: -20px;
+}
+.user>button{
+    height: 40px;
+    width: 30%;
+    margin: auto;
+    background-color: teal;
+    border-radius: 5px;
+    border: none;
+}
+.nav {
+
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+}
+
+.nav>a {
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 25px;
+}
