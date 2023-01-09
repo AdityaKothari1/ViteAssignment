@@ -19,7 +19,7 @@ const Marrige = () => {
                 contact:contact,
                 age:age
             }
-            axios.post("http://localhost:8000/applymarrige",payload).then((res)=>{
+            axios.post("https://vitefintech.onrender.com/applymarrige",payload).then((res)=>{
             console.log(res);
         if(res){
                 alert(`${res.data.msg}`);  

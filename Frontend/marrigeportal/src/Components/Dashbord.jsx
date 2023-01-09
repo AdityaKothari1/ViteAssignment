@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 export const Dashbord = () => {
     const [data,setData]=useState([]) 
     useEffect(()=>{
-         axios.get(`http://localhost:8000/getData`).then((res)=>{
+         axios.get(`https://vitefintech.onrender.com/getData`).then((res)=>{
            setData(res.data.data)
         
          })

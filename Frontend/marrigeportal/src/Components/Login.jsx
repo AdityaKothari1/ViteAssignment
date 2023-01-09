@@ -16,7 +16,7 @@ const Login = () => {
                 password:password,
             }
             console.log(payload);
-           axios.post("http://localhost:8000/login",payload).then((res)=>{
+           axios.post("https://vitefintech.onrender.com/login",payload).then((res)=>{
             console.log(res);
             if(res.data.msg=="Admin"){
                 naviagte("/dashboard")
